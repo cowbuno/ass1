@@ -15,15 +15,9 @@ bash
 cargo build
 ```
 
-### Implement
-main.rs
-```
-extern crate ass1;
+### Example
+![Alt text](img/example.png)
 
-fn main() {
-    let mut vec = vec![34, 7, 23, 32, 5, 62];
-    ass1::quick_sort(&mut vec);
-    println!("Sorted array: {:?}", vec);
-}
+## License 
 
-```
+Copyright (c) Talipov Zhenis SE-2204 Blockchain 2
