@@ -1,3 +1,17 @@
+pub fn selection_sort<T: PartialOrd>(arr: &mut [T]) {
+    let len = arr.len();
+    for i in 0..len {
+        let mut min_idx = i;
+        for j in i + 1..len {
+            if arr[j] < arr[min_idx] {
+                min_idx = j;
+            }
+        }
+        arr.swap(min_idx, i);
+    }
+}
+
+
 pub fn quick_sort<T: PartialOrd>(arr: &mut [T]) {
     if arr.len() <= 1 {
         return;
@@ -22,19 +36,6 @@ fn partition<T: PartialOrd>(arr: &mut [T]) -> usize {
     i
 }
 
-
-pub fn selection_sort<T: PartialOrd>(arr: &mut [T]) {
-    let len = arr.len();
-    for i in 0..len {
-        let mut min_idx = i;
-        for j in i + 1..len {
-            if arr[j] < arr[min_idx] {
-                min_idx = j;
-            }
-        }
-        arr.swap(min_idx, i);
-    }
-}
 
 pub fn insertion_sort<T: PartialOrd>(arr: &mut [T]) {
     let len = arr.len();
