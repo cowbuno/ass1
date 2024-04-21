@@ -13,6 +13,7 @@ sorting_library = { git = "https://github.com/cowbuno/ass1.git", branch = "main"
 bash
 ```
 cargo build
+cargo run
 ```
 
 ### Example
